@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+                <%- include('../partials/head'); %>
+
+    <body class="container">
+      
+      <%- include('../partials/header'); %>
+            <main>
+                <div class="jumbotron">
+                  <h1>Matheus Grossi F.T de Oliveira</h1>
+                  <p>Vou apresentar algumas de minhas habilidades aprendidas e alguns portifólios de projetos</p>
+                  <p><%= subtitle %></p>
+                </div>
+                    <ul>
+                        <% qualities.forEach(function(quality){ %>
+                          <li>
+                            <strong><%= quality.title %></strong><%= quality.message%>
+                          </li>
+                       <% }) %>
+
+                      
+
+                      
+
+                    </ul>
+
+            </main>
+            <%- include('../partials/footer'); %>
+        
+    </body>
+
+</html>
